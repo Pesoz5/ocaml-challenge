@@ -1,6 +1,6 @@
 let movie_rating : int -> int -> int -> string =
   fun rat1 rat2 rat3 ->
-    if ((rat1 < 0 || rat1 > 5) && (rat2 < 0 || rat2 > 5) && (rat3 < 0 || rat3 > 5)) then failwith("Inputs are not in the expected range")
+    if ((rat1 < 0 || rat1 > 5) || (rat2 < 0 || rat2 > 5) || (rat3 < 0 || rat3 > 5)) then failwith("Inputs are not in the expected range")
     else 
       match (rat1, rat2, rat3) with 
       | (5, 5, 5) -> "Masterpiece"
