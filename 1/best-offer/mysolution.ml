@@ -9,9 +9,9 @@ let best_offer : int option -> int option -> int option -> int option =
     
     | (Some of1, Some of2, Some of3) ->
         if (Some of1 >= Some of2 && Some of1 >= Some of3) then Some of1
-      else 
-        if(Some of2 >= Some of1 && Some of2 >= Some of3) then Some of2
-        else Some of3
+        else 
+          if(Some of2 >= Some of1 && Some of2 >= Some of3) then Some of2
+          else Some of3
 
         
         
