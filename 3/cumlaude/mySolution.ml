@@ -30,5 +30,5 @@ let avg_norec : grade list -> float =
               |> fun f ->
                 let sum = List.fold_left (fun acc x -> acc + x) 0 f in
                 let count = List.length gradeList in
-                if count = 0 then failwith "Cannot compute average of an empty list"
+                if count = 0 then failwith "empty list"
                 else Float.of_int sum /. Float.of_int count
